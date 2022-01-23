@@ -58,7 +58,7 @@ Install() {
 		timedatectl set-timezone Asia/Shanghai
 		echo -e " ${Tip} 安装主程序..."
 		mkdir /usr/local/PortForward
-		wget 'https://proxy.freecdn.workers.dev/?url=https%3A%2F%2Fgithub.com%2Fdaycat%2FwhmcsPortForward%2Fraw%2Fmain%2F%25E8%258A%2582%25E7%2582%25B9%25E5%2590%258E%25E7%25AB%25AF%2Fslave.zip' -O slave.zip
+		wget 'https://proxy.freecdn.workers.dev/?url=https://github.com/daycat/whmcsPortForward/raw/main/slaves-main.zip' -O slave.zip
 		unzip slave.zip
 		cd /usr/local/PortForward/slave
 		mv bconfig.php config.php
