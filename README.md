@@ -1,20 +1,21 @@
 # whmcsPortForward
 
-whmcs交流群毛子哥修改的。
+A Usable fork of https://github.com/xieruan 's WHMCS Port Forward Plugin.
 
-[TG交流群](https://t.me/whmcsCN)
+[Telegram Chat](https://t.me/whmcsCN)
 
+##Prerequisites
+1. For all servers acting as the slave / pf server, it *MUST* have CentOS 7 installed
+2. You *MUST* have a server running WHMCS "Obviously"
+  - Only WHMCS 8.1.3 has been tested for compatibility. If any compatibility issues are found, please PM me by Telegram @daycat or open a new issue
 
-安装后端
+##Installation
+###For servers acting as the slave / pf server:
 ```
-bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/xieruan/whmcsPortForward/main/installx.sh)
+bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/daycat/whmcsPortForward/main/installx.sh)
 ```
-ehco隧道入口
-```
-bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/xieruan/whmcsPortForward/main/installc.sh)
-```
+Follow instructions within the script.
 
-bbr
-```
-wget -O tcp.sh "https://git.io/coolspeeda" && chmod +x tcp.sh && ./tcp.sh
-```
+###For Panel:
+Download this repository. Upload the Modules folder to the WHMCS server.
+Then, go to Addons -> PortForward to set up the panel.
